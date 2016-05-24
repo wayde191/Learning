@@ -1,0 +1,372 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>订单结算页 -京东商城</title>
+    <!--结算页面样式-->
+    <link type="text/css" rel="stylesheet" href="./订单结算页 -京东商城_files/saved_resource" source="widget">
+    <link type="text/css" rel="stylesheet" href="./订单结算页 -京东商城_files/saved_resource(1)">
+</head>
+<body id="mainframe">
+
+<div class="w w1 header clearfix">
+    <div class="stepflex" id="#sflex03">
+        <dl class="first done">
+            <dt class="s-num">1</dt>
+            <dd class="s-text">1.我的购物车<s></s><b></b></dd>
+        </dl>
+        <dl class="normal doing">
+            <dt class="s-num">2</dt>
+            <dd class="s-text">2.填写核对订单信息<s></s><b></b></dd>
+        </dl>
+        <dl class="normal last">
+            <dt class="s-num">3</dt>
+            <dd class="s-text">3.成功提交订单<s></s><b></b></dd>
+        </dl>
+    </div>
+</div>
+
+<!-- main -->
+<div id="container">
+    <div id="content" class="w">
+        <!-- <div class="m"> -->
+        <div class="checkout-tit">
+            <span class="tit-txt">填写并核对订单信息</span>
+        </div>
+        <!--<div class="mc">-->
+        <div class="checkout-steps">
+            <!--  /widget/consignee-step/consignee-step.tpl -->
+            <div class="step-tit">
+                <h3>收货人信息</h3>
+
+                <div class="extra-r">
+                    <a href="http://trade.jd.com/shopping/order/getOrderInfo.action?rid=1464092565935#none"
+                       class="ftx-05" onclick="use_NewConsignee()"
+                       clstag="pageclick|keycount|trade_201602181|3">新增收货地址</a>
+                    <input type="hidden" id="del_consignee_type" value="0">
+                </div>
+            </div>
+            <div class="step-cont">
+                <div id="consignee-addr" class="consignee-content">
+                    <div class="consignee-scrollbar">
+                        <div class="ui-scrollbar-main">
+                            <div class="consignee-scroll">
+                                <div class="consignee-cont" id="consignee1" style="height: 42px;">
+                                    <ul id="consignee-list">
+                                        <li class="ui-switchable-panel ui-switchable-panel-selected"
+                                            style="display: list-item;" id="consignee_index_138026330"
+                                            selected="selected">
+                                            <div class="consignee-item item-selected" consigneeid="138026330"
+                                                 id="consignee_index_div_138026330" consigneetype="0"
+                                                 clstag="pageclick|keycount|trade_201602181|1">
+                                                <span limit="8" title="孙伟">孙伟</span><b></b>
+                                            </div>
+                                            <div class="addr-detail">
+                                                <span class="addr-name" limit="6" title="孙伟">孙伟</span>
+                                                <span class="addr-info" limit="45"
+                                                      title="湖北 武汉市 江夏区 金口街道江夏区高新六路中冶创业苑6-3-101">湖北 武汉市 江夏区 金口街道江夏区高新六路中冶创业苑6-3-101</span>
+                                                <span class="addr-tel">186****0534</span>
+                                                <span class="addr-default">默认地址</span>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/ /widget/consignee-step/consignee-step.tpl -->
+            <div class="hr"></div>
+            <!--/ /widget/payment-step/payment-step.tpl -->
+            <div class="step-tit"><h3>送货清单</h3></div>
+            <div class="step-cont" id="skuPayAndShipment-cont">
+                <!--添加商品清单  zhuqingjie -->
+                <div class="shopping-lists" id="shopping-lists">
+                    <!--定义大商品清单LIST-->
+                    <div class="shopping-list ABTest">
+                        <div class="goods-list">
+                            <!--购物车单品商品-->
+                            <!--一般套装商品-->
+                            <!--满返套装商品-->
+                            <!--满赠套装商品-->
+                            <!--配送方式-->
+                            <div class="goods-tit">
+                                <h4 class="vendor_name_h" id="124547">商家：匹克恒奥专卖店</h4>
+                            </div>
+
+                            <!--单品开始-->
+                            <div class="goods-items">
+                                <div class="goods-item goods-item-extra" goods-id="1667452967">
+
+                                    <div class="p-img">
+                                        <a target="_blank" href="http://item.jd.com/1667452967.html"><img
+                                                src="./订单结算页 -京东商城_files/572ffb68N4a1bccfd.jpg" alt=""></a>
+                                    </div>
+                                    <div class="goods-msg">
+                                        <div class="goods-msg-gel">
+                                            <div class="p-name">
+                                                <a href="http://item.jd.com/1667452967.html" target="_blank">
+                                                    匹克篮球鞋男夏季 帕克三代简版中帮透气防滑战靴 时尚水泥地耐磨减震经典运动鞋 黑色 42(手机259)
+                                                </a>
+                                            </div>
+                                            <div class="p-price">
+                                                <!--增加预售金额显示 begin   预售分阶段支付类型（1：一阶梯全款支付；2：一阶梯定金支付(全款或定金可选)；3：三阶梯(仅定金)；4：三阶梯(全款或定金可选)；5：一阶梯仅定金支付） -->
+
+                                                <strong class="jd-price">￥359.00</strong>
+                                                <!--增加预售金额显示 end-->
+				              <span class="p-num">
+																      				                x1
+    				              												              </span>
+                                                <span id="pre-state" class="p-state" skuid="1667452967">有货</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="p-icon p-icon-w"></i><span class="ftx-04">7天无理由退货</span>
+                                    </div>
+
+                                    <div class="clr"></div>
+                                    <div class="gift-item ftx-03" gift-id="10358105201">
+                                        <p>【赠品】&nbsp;篮球鞋跑步鞋运动鞋 确认收货返京豆 单拍无效 红色 42 ×1</p>
+                                    </div>
+                                    <!-- 京券和东券显示 -->
+
+                                    <!-- 延保显示 -->
+                                </div>
+                            </div>
+                            <!--单品结束-->
+                            <!--一般套装开始-->
+                            <!--一般套装结束-->
+                            <!--满返套装开始-->
+                            <!--满返套装结束-->
+                            <!--满赠套装开始-->
+                            <!--满赠套装结束-->
+                        </div>
+                        <!--goods-list 结束-->
+                        <div class="dis-modes">
+                            <!--购物车单品商品-->
+                            <!--一般套装商品-->
+                            <!--满返套装商品-->
+                            <!--满赠套装商品-->
+                            <!--配送方式-->
+                            <!--以下为京东配送方式-->
+                            <!--配送方式-->
+                            <!--配送方式-->
+                            <!--以下为京东大家电配送-->
+
+                            <!--以下为京东第三方配送-->
+                            <!--以下为第三方配送-->
+                            <!--如果是SOP快递或者是京东中小件商品，但是不支持配送，则采用快递运输-->
+                            <div class="mode-item mode-tab">
+                                <h4>配送方式</h4>
+
+                                <div class="mode-tab-nav">
+                                    <ul>
+                                        <li class="mode-tab-item curr tips-hover">
+            			<span class="m-txt">快递运输<i class="qmark-icon qmark-tip" data-tips="由商家选择合作快递为您配送"></i>
+                  </span>
+                                            <b></b>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mode-tab-con hide">
+                                    <div class="mode-promise">
+                                        <span id="promise-ico"><a href="javascript:void(0)" class="pop_FreightInsurance"
+                                                                  title="">　</a></span>
+
+                                        <div class="promise-txt yfx_div_remark" id="124547"> 为您购买了运费险，最高赔付20.00元/单</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--dis-modes 结束-->
+                        <div class="clr"></div>
+                        <!--
+                        <div class="freight-cont">
+                                                          <strong class="ftx-01" style="color:#666" freightByVenderId="124547"  popJdShipment="false">免运费</strong>
+                                             </div>
+                      -->
+                    </div>
+                    <!--shopping-list 结束-->
+                    <form id="skuAndShipment_submit_form" method="post"
+                          action="http://trade.jd.com/shopping/order/getOrderInfo.action?rid=1464092565935">
+                        <input type="hidden" id="saveParam_paymentId" name="saveParam.paymentId"><!--支付方式id-->
+                        <input type="hidden" id="saveParam_otype" name="saveParam.onlinePayType">
+                        <!-- 京东配送 -->
+                        <input type="hidden" id="saveParam_jdShipmentType" name="saveParam.jdShipmentType" value=""><!--京东配送-->
+                        <input type="hidden" id="saveParam_jdShipTime" name="saveParam.jdShipTime" value=""><!-- 区分工作日，311，411-->
+                        <input type="hidden" id="saveParam_jdPayWayId" name="saveParam.jdPayWayId" value=""><!--货到付款方式-->
+                        <input type="hidden" id="saveParam_jdCheckType" name="saveParam.jdCheckType" value="2"><!--如果是支票这个只是写死的[仅支持京东上门自取]-->
+                        <input type="hidden" id="saveParam_jdBigItemShipTimeOffset"
+                               name="saveParam.jdBigItemShipTimeOffset" value=""><!--京东大家电安装时间偏移量-->
+                        <input type="hidden" id="saveParam_jdBigItemInstallTimeOffest"
+                               name="saveParam.jdBigItemInstallTimeOffest" value=""><!--京东大家电配送时间偏移量-->
+                        <!--311-->
+                        <input type="hidden" id="saveParam_promiseType" name="saveParam.promiseType"><!--1表示311类型，2表示411-->
+                        <input type="hidden" id="saveParam_promiseDate" name="saveParam.promiseDate"><!--日历-->
+                        <input type="hidden" id="saveParam_promiseTimeRange" name="saveParam.promiseTimeRange"><!--波次-->
+                        <input type="hidden" id="saveParam_promiseSendPay" name="saveParam.promiseSendPay"><!--选择的sendpay-->
+                        <input type="hidden" id="saveParam_promiseMessage" name="saveParam.promiseMessage"><!--预约配送提示-->
+                        <!--411-->
+                        <input type="hidden" id="saveParam_jdBigItemNightShip" name="saveParam.jdBigItemNightShip"
+                               value=""><!--大家电是否支持晚间配送-->
+                        <!--京东第三方配送-->
+                        <input type="hidden" id="saveParam_otherShipmentType" name="saveParam.otherShipmentType"
+                               value=""><!--京东第三方配送-->
+                        <input type="hidden" id="saveParam_otherShipTime" name="saveParam.otherShipTime" value=""><!--区分工作日，311，411-->
+                        <input type="hidden" id="saveParam_otherBigItemShipOffset"
+                               name="saveParam.otherBigItemShipOffset" value=""><!--京东大家电安装时间偏移量-->
+                        <input type="hidden" id="saveParam_otherBigItemInstallTimeOffset"
+                               name="saveParam.otherBigItemInstallTimeOffset" value=""><!--京东大家电配送时间偏移量-->
+
+                        <!-- 第三方配送 -->
+                        <input type="hidden" id="saveParam_sopOtherShipmentType" name="saveParam.sopOtherShipmentType"
+                               value="67"><!--第三方配送-->
+                        <!-- 自提方式 -->
+                        <input type="hidden" id="saveParam_pickShipmentType" name="saveParam.pickShipmentType" value="">
+                        <!--自提方式-->
+                        <input type="hidden" id="saveParam_pickSiteId" name="saveParam.pickSiteId" value=""><!--自提点-->
+                        <input type="hidden" id="saveParam_pickDate" name="saveParam.pickDate" value=""><!--自提时间-->
+                        <input type="hidden" id="saveParam_pickSiteNum" name="saveParam.pickSiteNum" value="5"><!--默认5个-->
+                        <input type="hidden" id="saveParam_pickRegionId" name="saveParam.pickRegionId"><!--搜索区域-->
+                    </form>
+                    <input type="hidden" id="mainSkuIdAndNums" value="1667452967_1,"><!--icon隐藏域,用于更新库存-->
+                    <input type="hidden" id="calendar_hdata" value=""><!--icon隐藏域，用户存日历控件时间段-->
+                    <input type="hidden" id="calendar_ddata" value=""><!--icon隐藏域，用户存日历控件日期-->
+                    <input type="hidden" id="calendar_x" value=""><!--icon隐藏域，存日历控件X坐标-->
+                    <input type="hidden" id="calendar_y" value=""><!--icon隐藏域，用日历控件Y坐标-->
+                    <input type="hidden" id="last_sel_promiseDate" value=""><!--icon隐藏域，记录上次选中的日期-->
+                    <input type="hidden" id="last_sel_promiseTimeRange" value=""><!--icon隐藏域，记录上次选中的时间段-->
+                    <input type="hidden" id="last_sel_promiseSendPay" value=""><!--icon隐藏域，记录上次选中的sendpay-->
+                    <input type="hidden" id="shipment411_sendpay" value=""><!--411sendpay-->
+                    <input type="hidden" id="shipment_support_type" value="0"><!--icon隐藏域，当前311和411支持的类型，0表示311,411都不支持,1表示只支持311,2表示只支持411,3表示311,411都支持-->
+                    <input type="hidden" id="shipment_select_support" value=""><!--icon隐藏域，当前311和411选中的是哪一个，1表示选中311,2表示选中411-->
+                    <input type="hidden" id="shipment_cur411_support" value=""><!--icon隐藏域，当前411是否还支持配送，1支持，2不支持-->
+                    <input type="hidden" id="shipment411_msg" value=""><!--icon隐藏域，411提示信息-->
+                    <input type="hidden" id="pick_sel_regionid" value=""><!--icon隐藏域，临时存放选中的自提点区域ID-->
+                    <input type="hidden" id="temp_pick_sel_regionid" value=""><!--icon隐藏域，临时存放选中的自提点区域ID-->
+                    <input type="hidden" id="pick_sel_id" value=""><!--icon隐藏域，临时存放选中的自提点ID-->
+                    <input type="hidden" id="is_invoke_pickdate" value="0"><!--自提时间隐藏域，是否要刷新自提点时间-->
+                    <input type="hidden" id="is_refresh_installdate" value=""><!--icon隐藏域，是否要刷新商品安装时间-->
+
+                    <input type="hidden" id="popVenderIdStr" value="124547"><!--icon隐藏域，所有店铺ID串-->
+                    <!--隐藏的311配送日历开始-->
+                    <script id="shipment_hidediv" type="text/temp">
+		  <div class="date-thickbox" id="delivery-tab-311">
+				<div class="tab-nav">
+					<ul>
+						<li class="tab-nav-item tab-item-selected" id="li_311_id" onclick="doSwith311Tab('311')"> 指定时间 <b> </b> </li>
+						<li class="tab-nav-item" id="li_411_id" onclick="doSwith311Tab('411')"> 极速达 <b> </b> </li>
+					</ul>
+				</div>
+				<div class="tab-con" id="tab_311_div">
+					<div class="date-delivery" id="date-delivery1"></div>
+					<div class="ftx-03 mt20">
+						温馨提示：我们会努力按照您指定的时间配送，但因天气、交通等各类因素影响，您的订单有可能会有延误现象！
+					</div>
+          <div class="tips-618 mt20">
+            <div class="tips-con">
+              <p class="tips-m">6月18日、19日下单，配送时间选择在6月24日或25日，活动结束后抽取20万幸运客户<b>赠送100京豆</b></p>
+            </div>
+          </div>
+					<div class="op-btns mt10 ac"> <a id="timeSave311" href="javascript:void(0);" href="" class="btn-9"> 保存 </a> <a href="javascript:jQuery.closeDialog();"  class="btn-9 ml10"> 取消 </a> </div>
+				</div>
+				<div class="tab-con hide" id="tab_411_div">
+					<div> 下单后或支付成功后2小时送达</div>
+					<div class="ftx-03 mt20" id="message_show_411">
+						温馨提示：我们会努力按照您指定的时间配送，但因天气、交通等各类因素影响，您的订单有可能会有延误现象！
+					</div>
+					<div class="op-btns mt10 ac"> <a id="timeSave411" class="btn-9"> 保存 </a> <a href="javascript:jQuery.closeDialog();" class="btn-9 ml10"> 取消 </a> </div>
+				</div>
+		</div>
+
+
+                    </script>
+                    <!--隐藏的311配送日历结束-->
+                    <script id="nostock-box01" type="text/temp">
+    <div class="limited-thickbox">
+    	<div class="tip-box icon-box">
+    		<span class="warn-icon m-icon"></span>
+    		<div class="item-fore">
+    			<h3>下手慢了~部分商品被抢空，继续结算其它商品？</h3>
+    		</div>
+    	</div>
+    	<div class="goods-items" id="out-skus">
+    	</div>
+    	<div class="op-btns ac">
+    			<a href="javascript:continueBuy()" class="btn-1" clstag="trade|keycount|sop|bfwhjxjs">继续</a>
+    			<a href="javascript:goCart()" class="btn-9 ml10" clstag="trade|keycount|sop|bfwhfhgwc">返回购物车</a>
+    	</div>
+    </div>
+
+
+                    </script>
+                    <br><br>
+
+                    <div id="trade-nostock-recommendation-render" style="display:none"></div>
+                    <script id="nostock-box02" type="text/temp">
+    <div class="limited-thickbox">
+    	<div class="tip-box icon-box">
+    		<span class="warn-icon m-icon"></span>
+    		<div class="item-fore">
+    			<h3>下手慢了~全部商品被抢空了
+					<span class="extra">
+                        <a href="javascript:goCart()" class="btn-9 ml10" clstag="trade|keycount|sop|qbwhfhgwc">返回购物车</a>
+                    </span>
+				</h3>
+    		</div>
+    	</div>
+    	<div class="p-lists">
+    		<div class="mt">
+    			看看其他的...
+    		</div>
+    		<div class="mc" id="trade-nostock-recommendation">
+    		</div>
+    	</div>
+    </div>
+
+
+                    </script>
+                    <div class="clr"></div>
+                </div>
+                <!--shopping-lists 结束-->
+            </div>
+        </div>
+
+        <div class="trade-foot">
+            <div class="trade-foot-detail-com">
+                <div class="fc-price-info">
+                    <span class="price-tit">应付总额：</span>
+                    <span class="price-num" id="sumPayPriceId">￥359.00</span>
+                </div>
+
+                <div class="fc-consignee-info">
+                    <span class="mr20" id="sendAddr">寄送至： 湖北 武汉市 江夏区 金口街道  江夏区高新六路中冶创业苑6-3-101</span>
+                    <span id="sendMobile">收货人：孙伟 186****0534</span>
+                </div>
+            </div>
+
+            <div id="checkout-floatbar" class="group">
+                <div class="ui-ceilinglamp checkout-buttons">
+                    <div class="sticky-wrap">
+                        <div class="inner">
+                            <button type="submit" class="checkout-submit" id="order-submit"
+                                    onclick="javascript:submit_Order();"
+                                    clstag="pageclick|keycount|trade_201602181|25">
+                                提交订单<b></b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- /main -->
+</body>
+</html>
